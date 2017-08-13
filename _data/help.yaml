@@ -20,3 +20,13 @@
     One of the best resources for getting started with R and Tidyverse.
   date: 08/08/17
   guide_url: http://r4ds.had.co.nz/
+
+-
+  title: '2016 Election Data'
+  date:
+  description: >
+    Great Visualization of the 2016 Election at the county level. 
+  date: 2016
+  guide_url: http://johnguerra.co/viz/USElections2016/
+
+  
