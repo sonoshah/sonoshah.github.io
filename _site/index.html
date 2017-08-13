@@ -60,7 +60,7 @@ It is threatened by habitat loss.
             Ph.D. Candidate UC Riverside
           </h2>
            <h3>
-            <a href="posc149.html">Teaching</a>
+            <a href="posc149.html">Teaching</a> | <a href="#Pubs">Publications</a> | <a href="#working">Working Papers</a>  
           </h3>
         </div>
         <div class="col-xs-3 col-lg-3">
@@ -276,7 +276,7 @@ I also work as a researcher with <a href="www.aapidata.com">AAPI Data</a> where 
   <section class="container">
     <div class="row">
       <div class="col-md-9">
-        <h3>Working Papers</h3>
+        <h3><a id="working">Working Papers</a></h3>
       </div>
     </div>
 
@@ -398,8 +398,6 @@ I also work as a researcher with <a href="www.aapidata.com">AAPI Data</a> where 
       </div>
       <div class="row">
         <div class="col-xs-12">          
-          <img src="/sonoshah.github.io/img/elbowpatched-icon.svg" alt="Elbowpatched"
-               style="float:left;margin-right:5px;width:20px;height:20px;">    
           </a>
         </div>
       </div>
@@ -421,5 +419,18 @@ I also work as a researcher with <a href="www.aapidata.com">AAPI Data</a> where 
       });
     });
   </script>
+<script src="jquery.js"></script>
+<script>
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+</script>
+
 </body>
 </html>
