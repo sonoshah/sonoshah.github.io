@@ -16,7 +16,7 @@ intro:
   title: "POSC 149: Presidential Elections" 
   body: >
    Welcome to my course page for Presidential Elections. One of my major goals for this class, was for my students to get some exposure to working with real data.
-   I designed this course to allow for a large amount of hands-on activities. Students work with multiple datasets using Hadley Wickam's excellennt Tidyverse package in R.
+   I designed this course to allow for a large amount of hands-on activities. Students work with multiple datasets using Hadley Wickam's excellent [Tidyverse](https://www.tidyverse.org/) package in R.
    Some of the planned labs include: working with county-level election returns, scraping twitter for sentiment analysis, and exploring the 2016 CCES.
 
    ## In an effort to make things a little easier, this page is divided into <a href="#Teach">Lectures</a>, <a href="#Labs">Labs</a>, and <a href="#help">Help</a>.

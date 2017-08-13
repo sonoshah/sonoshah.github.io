@@ -13,3 +13,10 @@
     Here's a detailed guide to help you work through the first lab assignment.
   date: 08/08/17
   guide_url: posc149_lab_1.html
+
+-
+  title: 'R for Data Science'
+  description: >
+    One of the best resources for getting started with R and Tidyverse.
+  date: 08/08/17
+  guide_url: http://r4ds.had.co.nz/
