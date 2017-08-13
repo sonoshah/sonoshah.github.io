@@ -1,0 +1,40 @@
+name: Sono Shah
+
+label: Ph.D. Candidate UC Riverside
+
+picture: /img/profile-picture.jpg
+
+email: sshah018@ucr.edu
+
+phone: 
+
+department: Political Science
+
+institution: University of California Riverside
+
+mailing_address:
+
+profiles:
+  -
+    network: View My CV
+    url: https://www.dropbox.com/s/qznmo11h07lwfjw/Sono%20Shah%20CV.pdf?dl=0
+  -
+    network: Github
+    username:
+    url: https://github.com/sonoshah
+  -
+    network: Twitter
+    username: imsonoshah
+    url: https://twitter.com/imsonoshah/
+
+intro:
+  title: Hello!
+  body: >
+    My name is Sono Shah. I am a Ph.D. candidate in Political Science at the [University of California Riverside](http://politicalscience.ucr.edu/). 
+    I’m interested in race & ethnicity and political and civic engagement in the U.S. 
+    My dissertation focuses on Asian Americans and Latinos and their campaign contribution behavior.
+    I also work as a researcher with [AAPI Data](www.aapidata.com) where we make data on Asian Americans and Pacific Islanders more accessible.
+
+    ## If you are looking for my teaching materials click <a href="posc149.html">here</a>.
+
+    

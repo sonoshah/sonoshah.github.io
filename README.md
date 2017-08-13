@@ -1,2 +1,1 @@
-# sonoshah.github.io
-personal site
+My Site

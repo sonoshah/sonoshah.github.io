@@ -1,0 +1,15 @@
+-
+  title: 'Getting to Know Tidyverse'
+  description: >
+    Here's a tutorial largely adapted from the excellent e-book by Chester Ismay and Albert Y.Kim, 
+    [An Introduction to Statistical and Data Sciences via R](http://moderndive.com/index.html).
+    The tutorial goes over the major functions used for data manipulation in Tidyverse.
+  guide_url: tidyverse-basics.html
+
+
+-
+  title: 'Lab 1 Guide'
+  description: >
+    Here's a detailed guide to help you work through the first lab assignment.
+  date: 08/08/17
+  guide_url: posc149_lab_1.html

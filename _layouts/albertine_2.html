@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<!--
+
+Albertine 0.1
+An Elbowpatched theme
+
+(c) 2014 Ian Li (http://ianli.com)
+
+####
+
+Albertine owlet
+http://en.wikipedia.org/wiki/Albertine_owlet
+
+The Albertine owlet (Glaucidium albertinum) is a species of owl in the Strigidae family. 
+It is found in Democratic Republic of the Congo and Rwanda. 
+Its natural habitat is subtropical or tropical moist montane forests. 
+It is threatened by habitat loss.
+
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.data.personal.name }}</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/albertine/css/default2.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Javascript -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body class="intro-screen">
+
+  <!-- ==================== -->
+  <!-- HEADER -->
+  <!-- ==================== -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9 col-lg-9">
+          <h1>
+            {{ site.data.personal.name }}
+          </h1>
+          <h2>
+            {{ site.data.personal.label }}
+          </h2>
+        </div>
+        <div class="col-xs-3 col-lg-3">
+          <img src="{{ site.baseurl }}{{ site.data.personal.picture }}" 
+               class="img-circle"
+               style="margin-top:-6px;width:75px;border:2px solid rgba(255,255,255,0.75)">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== -->
+  <!-- SECTION -->
+  <!-- ==================== -->
+  <div class="container"
+           id="section-about">
+    <div class="row">
+      <section class="col-md-8">
+        {% if site.data.coursepage.intro.title %}
+          <h3 style="font-size:48px">
+            {{ site.data.coursepage.intro.title }}
+          </h3>
+        {% else %}
+          <h3>
+            About
+          </h3>
+        {% endif %}
+
+        <div class="lead">
+          {{ site.data.coursepage.intro.body | markdownify }}
+        </div>
+        
+      </section>
+      <section class="col-md-offset-1 col-md-3">
+        <h3>Contact</h3>
+        <p>
+          {{ site.data.coursepage.email | replace:'@',' <small>[at]</small> ' | replace:'.',' <small>[dot]</small> ' }}
+        </p>
+        <p>
+          {{ site.data.coursepage.department }}<br>
+          {{ site.data.coursepage.institution }}<br>
+           <a href="index.html"> Back to my main site </a>                   
+        </p>
+      </section>
+    </div>
+  </div>
+
+{% if site.data.lectures.size > 0 %}
+  <!-- ==================== -->
+  <!-- Lectures -->
+  <!-- ==================== -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h3><a id="Teach">Lectures</a></h3>
+      </div>
+    </div>
+    <h4>Here are the lectures for my current class:</h4>
+    {% for lecture in site.data.lectures %}
+      <div class="row">
+        <div class="col-md-9">
+          <p>
+            <b>
+              {% if lecture.slides_url %}
+                <a href="{{ lecture.slides_url }}">
+                  {{ lecture.title }}
+                </a>
+              {% else %}
+                {{ lecture.title }}
+              {% endif %}
+            </b>
+            <small>
+              {{ lecture.date }}
+            </small>
+            <br>
+            {{ lecture.location }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+{% if site.data.labs.size > 0 %}
+  <!-- ==================== -->
+  <!-- LABS -->
+  <!-- ==================== -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h3><a id="Labs">Labs</a></h3>
+      </div>
+    </div>
+
+    {% for lab in site.data.labs %}
+      <div class="row">
+        <div class="col-xs-4
+                    col-sm-3
+                    col-md-3
+                    col-lg-2">
+        </div>
+        <div class="col-xs-12
+                    col-sm-9
+                    col-md-6
+                    col-lg-7">
+          <p>
+            <b>
+              {% if lab.assignment_url %}
+                <a href="{{ lab.assignment_url }}">
+                  {{ lab.title }}
+                </a>
+              {% else %}
+                {{ lab.title }}
+              {% endif %}
+            </b>
+          </p>
+          <b>Date:</b> {{ lab.date }}
+          {{ lab.description | markdownify }}
+          <a href="{{ lab.guide_url }}">
+                  Extra Help
+                </a>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+
+
+
+  {% if site.data.help.size > 0 %}
+  <!-- ==================== -->
+  <!-- LABS -->
+  <!-- ==================== -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h3><a id="help">Help</a></h3>
+      </div>
+    </div>
+
+    {% for help in site.data.help %}
+      <div class="row">
+        <div class="col-xs-4
+                    col-sm-3
+                    col-md-3
+                    col-lg-2">
+        </div>
+        <div class="col-xs-12
+                    col-sm-9
+                    col-md-6
+                    col-lg-7">
+          <p>
+            <b>
+              {% if help.guide_url %}
+                <a href="{{ lab.guide_url }}">
+                  {{ help.title }}
+                </a>
+              {% else %}
+                {{ help.title }}
+              {% endif %}
+            </b>
+          </p>
+          <b>Date:</b> {{ help.date }}
+          {{ help.description | markdownify }}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+
+  <!-- ==================== -->
+  <!-- FOOTER -->
+  <!-- ==================== -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">          
+          <img src="{{ site.baseurl }}/img/elbowpatched-icon.svg" alt="Elbowpatched"
+               style="float:left;margin-right:5px;width:20px;height:20px;">    
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== -->
+  <!-- JAVASCRIPTS -->
+  <!-- ==================== -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#section-about').waypoint(function (direction) {
+        if (direction === 'down') {
+          $('body').removeClass('intro-screen');
+        } else {
+          $('body').addClass('intro-screen');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
