@@ -5,4 +5,11 @@
    County Level election data comes from The Guardian and Townhall, scraped by Tony McGovern.
   assignment_url: posc149_lab1_assignment.html
   guide_url: posc149_lab_1.html
+-
+  title: 'Lab 1: Exploring county-level election data'
+  description: >
+   This assignment will be a multi-part lab where you work with county-level election data from the 2012 and 2016 election and demographic data from the Census.
+   County Level election data comes from The Guardian and Townhall, scraped by Tony McGovern.
+  assignment_url: posc149_lab2_assignment.html
+  guide_url: https://shahsono.shinyapps.io/posc_149_lab2guide/
 
