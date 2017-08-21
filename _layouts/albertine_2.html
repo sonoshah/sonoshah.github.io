@@ -177,11 +177,18 @@ It is threatened by habitat loss.
               {% endif %}
             </b>
           </p>
-          <b>Date:</b> {{ lab.date }}
           {{ lab.description | markdownify }}
           <a href="{{ lab.guide_url }}">
                   Extra Help
-                </a>
+                </a> | 
+          {% if lab.extracredit %}     
+           <a href="{{ lab.extracredit }}">
+                  Extra Credit
+                </a> 
+           {% endif %}     
+          <br>
+          </br>
+
         </div>
       </div>
     {% endfor %}
