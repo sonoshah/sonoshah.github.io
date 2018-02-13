@@ -1,11 +1,24 @@
 -
+  title: 'Lab 4 : CCES Data'
+  description: >
+    Today, we will be working with real public opinion data from the 2016 Cooperative Congressional Election Study (CCES). The CCES is a 50,000+ national stratified sample survey that is fielded during two waves during election years and is extremely popular for political science research. This data is what you will be using in your final paper project. (Lab Developed w/ Stephanie DeMora-Rettberg)
+  assignment_url: posc149_lab4_assignment.pdf
+
+
+
+-
+  title: 'Lab 3: Social Media Data'
+  description: >
+    In this lab, we will be working with data pulled directly from twitter. The most recent estimates show that Twitter alone has about **328 million** active monthly users. Lucky for us, people tweet about everything! Although restaurant reviews and folks’ opinons about *Game of Thrones* probably doesn’t matter much for political scientists like us. . . We **can** use their opinions about candidates, and their policy preferences! In other words, it’s a really cheap, and quick way to collect contextual information about elections and public opinion. (Lab Developed w/ Stephanie DeMora-Rettberg)
+  assignment_url: posc149_lab3_assignment.pdf
+
+-
   title: 'Lab 2: Developing Voter Targets'
   description: >
    Developing Voter targets
   assignment_url: posc149_lab2_assignment.html
   guide_url: https://shahsono.shinyapps.io/posc_149_lab2guide/
   extracredit: posc149_lab2_extra_credit.html
-
 
 -
   title: 'Lab 1: Exploring county-level election data'

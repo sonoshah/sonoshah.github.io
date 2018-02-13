@@ -178,9 +178,11 @@ It is threatened by habitat loss.
             </b>
           </p>
           {{ lab.description | markdownify }}
-          <a href="{{ lab.guide_url }}">
-                  Extra Help
-                </a> | 
+          {% if lab.guide_url %}     
+           <a href="{{ lab.guide_url }}">
+                  Help |
+                </a> 
+          {% endif %}        
           {% if lab.extracredit %}     
            <a href="{{ lab.extracredit }}">
                   Extra Credit
