@@ -85,7 +85,14 @@ section {
   .intro-screen a:hover {
     color:#fff59d;
   }
+blockquote, blockquote p {
+    font-size: 13px;
+    margin-bottom: 1em;
+}
 
+p.custom1 {
+    text-align:center;
+}
 /*******************
  * TRANSITIONS
  *******************/

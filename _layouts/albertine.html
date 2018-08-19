@@ -1,24 +1,4 @@
 <!DOCTYPE html>
-
-<!--
-
-Albertine 0.1
-An Elbowpatched theme
-
-(c) 2014 Ian Li (http://ianli.com)
-
-####
-
-Albertine owlet
-http://en.wikipedia.org/wiki/Albertine_owlet
-
-The Albertine owlet (Glaucidium albertinum) is a species of owl in the Strigidae family. 
-It is found in Democratic Republic of the Congo and Rwanda. 
-Its natural habitat is subtropical or tropical moist montane forests. 
-It is threatened by habitat loss.
-
--->
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -71,7 +51,7 @@ It is threatened by habitat loss.
             {{ site.data.personal.label }}
           </h2>
            <h3>
-            <a href="posc149.html">Teaching</a> | <a href="#Pubs">Publications</a> | <a href="#working">Working Papers</a>  
+             <a href="#Pubs2">My Research</a>| <a href="posc149.html">Teaching</a> | <a href="#working">Working Papers</a>  
           </h3>
         </div>
         <div class="col-xs-3 col-lg-3">
@@ -144,11 +124,7 @@ It is threatened by habitat loss.
       <section class="col-md-9">
         <h3><a id="Pubs">Research Interests</a></h3>
         {% for interest in site.data.research_interests %}
-          <p>
-            <b>
-                - {{ interest.name }}
-            </b>
-          </p>
+          <p>{{ interest.name }}</p>
         {% endfor %}
       </section>
     </div>
@@ -159,18 +135,18 @@ It is threatened by habitat loss.
   <div class="container">
     <div class="row">
       <section class="col-md-9">
-        <h3><a id="Pubs">Publications</a></h3>
-
+        <h3><a id="Pubs">Research</a></h3>
+        <h4><a id="Pubs2">Publications</a></h4>
         {% for publication in site.data.publications %}
           <p>
+             <small>
+              {{ publication.year }}
+            </small>
             <b>
               <a href="{{ publication.pdf }}">
                 {{ publication.title }}
               </a>
             </b>
-            <small>
-              {{ publication.year }}
-            </small>
             <br>
             {{ publication.authors }}
             <br>
@@ -182,6 +158,15 @@ It is threatened by habitat loss.
               {% when 'journal' %}
                 <i>{{ publication.journal }}</i><br>
                <blockquote class="blockquote">{{ publication.abstract }}</blockquote>
+                {% if publication.medialinks.size > 0 %}
+                  <p class="custom1">Media:
+                   {% for entry in publication.medialinks %}
+                    [<a href="{{ entry.url }}">
+                      {{ entry.title }}
+                    </a>]
+                    {% endfor %}
+                    </p> 
+                {% endif %}
               {% when 'chapter' %}
                 In {{publication.editors}},
                 <i>{{publication.book_title}}</i>,
