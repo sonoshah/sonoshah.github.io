@@ -51,7 +51,7 @@
             {{ site.data.personal.label }}
           </h2>
            <h3>
-             <a href="#Pubs2">My Research</a>| <a href="posc149.html">Teaching</a> | <a href="#working">Working Papers</a>  
+             <a href="#Pubs2">My Research</a> | <a href="posc149.html">Teaching</a> | <a href="mycv.html">My CV</a>  
           </h3>
         </div>
         <div class="col-xs-3 col-lg-3">
@@ -190,24 +190,29 @@
   <!-- ==================== -->
   <!-- PROJECTS -->
   <!-- ==================== -->
+<div class="container">
+    <div class="row">
+      <section class="col-md-9">
+        <h3><a id="working">Research in Progress</a></h3>
+         {% for project in site.data.projects %}
+          <p>
+          {{ project.name }} <small> {{ project.status }} </small>
+           {{ project.authors | markdownify }}
+              <br>
+               <blockquote class="blockquote">{{ project.description }}</blockquote>
+               <br>
+
+          </p>
+        {% endfor %}
+      </section>
+    </div>
+  </div>
+
   <section class="container">
     <div class="row">
       <div class="col-md-9">
-        <h3><a id="working">Working Papers</a></h3>
-      </div>
-    </div>
-
-    {% for project in site.data.projects %}
-      <div class="row">
-        <div class="col-xs-4
-                    col-sm-3
-                    col-md-3
-                    col-lg-2">
-        </div>
-        <div class="col-xs-12
-                    col-sm-9
-                    col-md-6
-                    col-lg-7">
+        <h3><a id="working">Research in Progress</a></h3>
+         {% for project in site.data.projects %}
           <p>
             <b>
               {% if project.url %}
@@ -221,10 +226,11 @@
           </p>
           {{ project.authors | markdownify }}
           {{ project.description | markdownify }}
-
-        </div>
-      </div>
     {% endfor %}
+      </div>
+    </div>
+
+   
   </section>
   {% endif %}
 
