@@ -1,13 +1,33 @@
 -
+  name: 'The Trump Effect: Experimental Investigation into the Emboldening Effect'
+  authors: with Ben Newman, Jennifer Merolla, Danielle Lemi, Loren Collingwood, and Karthick Ramakrishnan
+  status: In preparation for submission
+  description: >
+   This article explores the effect of explicitly racial and inflammatory speech by political elites on mass citizens in a societal context where equality norms are widespread and generally heeded yet a subset of citizens nonetheless possess deeply ingrained racial prejudices. We argue that such speech should have an "emboldening effect" among the prejudiced, particularly where such speech goes without clear and strong condemnation by other elite political actors. To test this, we focus on the case of the Trump campaign for President in the United States, and utilize a survey experiment embedded within an online panel study. Our results demonstrate that in the absence of prejudiced elite speech, prejudiced citizens constrain the expression of their prejudice; however, in the presence of prejudiced elite speech—particularly when such speech is tacitly condoned by other elites—we find that the prejudiced are emboldened to both express and act upon their prejudices. 
+-
+  name: 'Donor Preferences fo Coethnic Representation, breaking the mold or more the same?'
+  description: >
+    Do ethnic and racial minorities prefer coethnic candidates? Theories of representation posit that citizens prefer representatives who are of the same racial or ethnic background as themselves. The notion that coethnic representatives are preferable for minority populations has been used as justification for measures that are designed to increase the amount of minority legislators elected to office, empirical evidence for these claims however, are mixed. 
+    I contribute to this debate by offering a novel way to measure support for coethnic representation by estimating rates of coethnic giving among campaign donors from a dataset of over 8 million contribution records from 1980. This measure improves upon previous work which rely on self-reported survey data, and other studies that are limited by the number of elections featuring co-ethnic candidates and the availability of voter data. 
+    I find that while White donors donors give the largest share of their contributions to coethnic candidates, this is primarily due to the large amount of White candidates running for office. Controlling for the number of White candidates, this relationship disappears. However, I find that Hispanic and especially Asian donors give significant amounts of money to coethnic candidates even though these candidates represent very small portions of the candidates running for office. 
+    This relationship remains after controlling for factors that are traditionally thought to influence contribution behavior. These findings contribute to the ongoing debate of whether racial and ethnic minorities prefer coethnic representatives and challenges extent to which conventional expectations of donor behavior may should apply to minority donors.
+
+-
+  name: 'How to Wn Friends and Influence People: Strategic Contributions of the Indian Lobby'
+  authors: with Maneesh Arora and Shubha Prasad
+  description: >
+   As one of the newest diasporic lobbies in Washington, DC, the US-India Politi- cal Action Committee (USINPAC) has been very successful in promoting stronger bilateral relations between the US and India. In order to achieve its goal, USINPAC has made strategic contributions to members of Congress who serve on committees that directly impact US foreign policy towards India. However, a puzzling disrup- tion in this pattern of strategic contributions is noticeable after 2008. We argue that this shift in contributions towards seemingly non-strategic candidates is indicative of USINPAC’s changing role. USINPAC is moving towards a more identity-based approach wherein it looks to politically represent Indian-Americans. Using a unique donor survey and a nationally representative sample of Indian Americans from the National Asian American Survey, we compare the political values and interests of the USINPAC donor network to those of the broader Indian American community.
+
+-
+  name: 'Asian American Agendas'
+  authors: with Janelle Wong and Karthick Ramakrishnan
+
+-
   name: 'Minority Donors: Exploring Asian American Donor Behavior'
   description: >
    My dissertation explores the role race & ethnicity plays in campaign contribution behavior by looking at Asian American donors. 
    Future work will examine how other donors from other marginalized groups such as Latinos and African Americans may also be influenced by race or ethnicity.
-  url: 
 
--
-  name: 'The Trump Effect: Experimental Investigation into the Emboldening Effect'
-  authors: with Ben Newman, Jennifer Merolla, Danielle Lemi, Loren Collingwood, and Karthick Ramakrishnan
 
 - 
   name: "Asian Americans and Affirmative Action in California"

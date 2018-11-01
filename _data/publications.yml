@@ -1,18 +1,33 @@
-
+-
+  type: journal
+  title: "Who sees an Hourglass? Assessing Citizens' Perception of Local Economic Inequality"
+  authors: with Ben Newman and Erinn Lauterbach
+  journal: Research and Politics
+  year: Forthcoming
+  pdf: 
+  url: 
+  abstract: The scholarly literature is observing a slow but steady growth in research exploring the effects of subnational economic inequality on political attitudes and behavior. Germane to this work is the assumption that citizens are aware of the level of inequality in their local residential context. At present, however, the evidence in support of this assumption is mixed. This article attempts to offer the literature improved tests of citizens’ awareness of local inequality by addressing a key limitation in past work—the discordance between the geographic unit underlying measures of the independent and dependent variables. Analyzing two national surveys employing a measure of perceived inequality scaled to the local level, the results suggest that citizens are indeed aware of the level of income inequality in their local environment and that the link between objective and perceived local inequality is most pronounced among lower income citizens.
 -
   type: journal
   title: 'Race, Place, and Building a Base:  Ethnic Change, Perceived Threat, and the Nascent Trump Campaign for President'
-  authors: Ben Newman, Sono Shah, and Loren Collingwood
+  authors: with Ben Newman and Loren Collingwood
   journal: Public Opinion Quarterly
   year: 2018
   pdf: "https://academic.oup.com/poq/advance-article/doi/10.1093/poq/nfx039/4782668?guestAccessKey=f2aab80d-1923-40ab-95f9-e785214f73ce"
   url: "https://academic.oup.com/poq/advance-article/doi/10.1093/poq/nfx039/4782668?guestAccessKey=f2aab80d-1923-40ab-95f9-e785214f73ce"
   abstract: "A prominent feature of Donald Trump’s campaign for president was the use of racially inflammatory rhetoric and fear over immigration—specifically from Mexico—to galvanize the electorate. Despite the commonly accepted assertion that hostility toward Mexican immigrants was an important attractor of core supporters to his base, analysts and academics alike have failed to explore the role that environmental indicators of perceived threat from immigration, such as residing in an area with a growing Latino population, played in generating support for Trump early in his campaign. We demonstrate that residing in a high-Latino-growth area is predictive of support for Trump following, but not before, his utterance of inflammatory and bellicose comments about Mexican immigrants. Our results suggest that, in addition to the importance of racial resentment and economic frustration, support for Trump in the early campaign period represented an adversarial reaction among Americans to Latino-led diversity."
+  medialinks:
+    - title: LSE American Politics and Policy</a>
+      url: http://blogs.lse.ac.uk/usappblog/2018/01/24/during-the-election-donald-trumps-racist-rhetoric-activated-the-fears-of-people-in-areas-with-growing-latino-populations/
+    - title: Pacific Standard
+      url: https://psmag.com/social-justice/growing-latino-population-fertile-ground-trump
+    - title: Newsweek
+      url: https://www.newsweek.com/trumps-attacks-hispanics-paid-dividends-ballot-box-789583
 -
   type: chapter
   year: 2016
   title: 'Gaps in Civic Engagement among Latinos and Asian Americans'
-  authors: Karthick Ramakrishnan, and Sono Shah,
+  authors: with Karthick Ramakrishnan
   editors: Klofstad, Casey (ed.)
   book_title: 'Resources, Engagement, and Recruitment: New Advances in the Study of Civic Volunteerism'
   location: Philadelphia, PA
